@@ -1,10 +1,10 @@
 import React from 'react'
-
+import LoginText from './MyComponents/Login'
 function App() {
   return (
-        <body>
-          
-        </body> 
+        <div className='center'>
+          <LoginText/>
+        </div>
   );
   
 }
