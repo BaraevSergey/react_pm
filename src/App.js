@@ -5,8 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const imgStyle = {
     margin:'30%',
-    //height:'300px',
-    //wight:'300px'?
   };
 
   return (
