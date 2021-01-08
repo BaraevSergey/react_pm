@@ -12,3 +12,39 @@ code {
     monospace;
 }
 
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+}
+
+.header-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: chocolate;
+}
+
+.center-block {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: auto;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+.top-frame-login {
+  padding: 50%;
+}
+
+.indent {
+  margin: 10px;
+}
+
+
