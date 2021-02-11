@@ -15,19 +15,132 @@ code {
 
 
 .header {
+  display: flex;
   width: 100vw;
   height: 8vh;
   background-color: #2F80ED ;
+  justify-content: space-between;
 }
 
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 81vh;
   background-color: #F0FBF7;
 }
 
 .footer{
+  display: flex;
+  justify-content: space-around;
   width: 100vw;
   height: 11vh;
   background-color: #2F80ED;
+}
+
+.lock{
+  height: 100%;
+}
+
+.sign_div{
+  display: flex;
+  justify-self: self-end;
+  width: 26vh;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.button_sign_in {
+  border-radius: 10px;
+  border-color: #2F80ED;
+  background-color: #78FFE7;
+  height: 80%;
+  width: 120px;
+  color: #5A47AB;
+  font-size: 100%;
+  font-weight: bolder;
+  margin-right: 10px;
+
+}
+
+.button_sign_up{
+  border-radius: 10px;
+  border-color: #2F80ED;
+  background-color: #78FFE7;
+  height: 80%;
+  width: 120px; 
+  color: #5A47AB;
+  font-size: 100%;
+  font-weight: bolder;
+  margin-right: 10px; 
+}
+ 
+.develop_span{
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-top: 30px; /* костыльное гавно чтобы было посередине */
+}
+
+.my_info{
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-top: 30px; /* костыльное гавно чтобы было посередине */
+}
+
+.input_login{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 800px;
+  height: 600px;
+}
+
+.forgot {
+  align-self: flex-end;
+}
+
+.login_button{
+  align-self: flex-end;
+}
+
+.right-marg{
+  display: flex;
+  justify-content: space-between;
+}
+
+.LogInText{
+  color: #2F80ED;
+  font-size: 30px;
+}
+
+.text{
+  font-size: 24px;
+  color: #2F80ED;
+}
+
+.loginbutton{
+  border-radius: 10px;
+  border-color: #78FFE7;
+  background-color: #2F80ED;
+  height: 70px;
+  width: 220px;
+  color: #ffffff;
+  font-size: 100%;
+  font-weight: bolder;
+}
+
+.text_input{
+  border-radius: 15px;
+  border-color: #2F80ED;
+  background-color: #FFFFFF;
+  opacity: 35%;
+  height: 70px;
+  font-size: 40px;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
 }
