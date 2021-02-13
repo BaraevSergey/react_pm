@@ -10,7 +10,7 @@ function App() {
             </picture>
             <div class='sign_div' >
               <button class="button_sign_in">Sign In </button>
-              <button class="button_sign_up">Sign Up </button>
+              <a href='register_page.html'> <button class="button_sign_up"> Sign Up </button> </a>
             </div>
           </header>
           
