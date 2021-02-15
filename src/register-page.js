@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './css/index.css';
+import './css/register-page.css';
+import RegPage from './RegPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+      <RegPage/>
   </React.StrictMode>,
-  document.getElementById('Login_Page')
+  document.getElementById('RegPage')
 );
-
-
-

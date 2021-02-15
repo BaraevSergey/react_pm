@@ -5,6 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+
+#Login_Page{
+  width: 100%;
+  height: 100%;
+}
+
+html{
+  width: 100%;
+  height: 100%;
 }
 
 code {
@@ -12,30 +24,50 @@ code {
     monospace;
 }
 
-
-
 .header {
   display: flex;
-  width: 100vw;
-  height: 8vh;
+  flex-shrink: 0; /*сжатие*/
+  width: 100%;
+  /* height: 8%; */
   background-color: #2F80ED ;
   justify-content: space-between;
+  align-items: center;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .main {
   display: flex;
+  flex-grow: 1; /*будет расти */
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 81vh;
+  width: 100%;
   background-color: #F0FBF7;
+  overflow: auto;
+}
+
+.input_login{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  background-color: antiquewhite;
+  min-width: 450px;
 }
 
 .footer{
+  flex-shrink: 0; /*сжатие*/
   display: flex;
   justify-content: space-around;
-  width: 100vw;
-  height: 11vh;
+  align-items: center;
+  width: 100%;
+  height: 70px;
   background-color: #2F80ED;
 }
 
@@ -46,8 +78,7 @@ code {
 .sign_div{
   display: flex;
   justify-self: self-end;
-  width: 26vh;
-  padding-top: 10px;
+  height: 50px;
   text-align: right;
 }
 
@@ -55,7 +86,7 @@ code {
   border-radius: 10px;
   border-color: #2F80ED;
   background-color: #78FFE7;
-  height: 80%;
+  /* height: 80%; */
   width: 120px;
   color: #5A47AB;
   font-size: 100%;
@@ -68,38 +99,30 @@ code {
   border-radius: 10px;
   border-color: #2F80ED;
   background-color: #78FFE7;
-  height: 80%;
+  text-decoration: none; /* убирает эффект ссылки */
   width: 120px; 
   color: #5A47AB;
   font-size: 100%;
   font-weight: bolder;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
+.button_sign_up a{ text-decoration: none; /* убирает эффект ссылки */}
  
 .develop_span{
   font-size: 22px;
   color: #FFFFFF;
-  margin-top: 30px; /* костыльное гавно чтобы было посередине */
 }
 
 .my_info{
   font-size: 22px;
   color: #FFFFFF;
-  margin-top: 30px; /* костыльное гавно чтобы было посередине */
 }
 
-.input_login{
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 800px;
-  height: 600px;
-  background-color: antiquewhite;
-}
+
 
 .forgot {
   align-self: flex-end;
+  margin-bottom: 10%;
 }
 
 .login_button{
@@ -109,16 +132,19 @@ code {
 .right-marg{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .LogInText{
   color: #2F80ED;
   font-size: 30px;
+  margin-bottom: 5%;
 }
 
 .text{
   font-size: 24px;
   color: #2F80ED;
+  
 }
 
 .loginbutton{
@@ -141,7 +167,8 @@ code {
   font-size: 40px;
 }
 
-.test{
+.InpLog{
   display: flex;
   flex-direction: column;
+  margin-bottom:5% ;
 }
