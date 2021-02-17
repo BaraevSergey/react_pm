@@ -9,9 +9,9 @@ body {
   height: 100%;
 }
 
-#Login_Page{
-  width: 100%;
-  height: 100%;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 html{
@@ -19,21 +19,16 @@ html{
   height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
-.header {
-  display: flex;
-  flex-shrink: 0; /*сжатие*/
+
+#Login_Page{
   width: 100%;
-  /* height: 8%; */
-  background-color: #2F80ED ;
-  justify-content: space-between;
-  align-items: center;
-}
+  height: 100%;
+} 
 
+/* СТИЛИ ДЛЯ ОБЩИХ ЭЛЕМЕНТОВ */
+
+/* общий див */
 .app{
   display: flex;
   flex-direction: column;
@@ -41,29 +36,33 @@ code {
   height: 100%;
 }
 
+
+/* синий хедер */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0; /*сжатие убрали*/
+  width: 100%;
+  background-color: #2F80ED ;
+}
+
+/* зеленый мейн */
 .main {
   display: flex;
-  flex-grow: 1; /*будет расти */
   justify-content: center;
   align-items: center;
+  flex-grow: 1; /*будет расти от хедера и до футера*/
   width: 100%;
+  overflow: auto; /* для скроллов*/
   background-color: #F0FBF7;
-  overflow: auto;
 }
 
-.input_login{
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-  background-color: antiquewhite;
-  min-width: 450px;
-}
 
+/* синий футер */
 .footer{
-  flex-shrink: 0; /*сжатие*/
   display: flex;
+  flex-shrink: 0; /*сжатие*/
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -71,22 +70,27 @@ code {
   background-color: #2F80ED;
 }
 
-.lock{
+
+/* СТИЛИ ДЛЯ HEADER ЭЛЕМЕНТОВ */
+
+
+/* стиль для значка замка */
+.header__lock{
   height: 100%;
 }
 
-.sign_div{
+/* стиль для контейнера с кнопками */
+.header__sign_buttons{
   display: flex;
   justify-self: self-end;
   height: 50px;
   text-align: right;
 }
-
-.button_sign_in {
+/* стиль для кнопки */
+.header__sign_buttons__button {
   border-radius: 10px;
   border-color: #2F80ED;
   background-color: #78FFE7;
-  /* height: 80%; */
   width: 120px;
   color: #5A47AB;
   font-size: 100%;
@@ -95,70 +99,57 @@ code {
 
 }
 
-.button_sign_up{
-  border-radius: 10px;
-  border-color: #2F80ED;
-  background-color: #78FFE7;
-  text-decoration: none; /* убирает эффект ссылки */
-  width: 120px; 
-  color: #5A47AB;
-  font-size: 100%;
-  font-weight: bolder;
-  margin-right: 10px;
-}
-.button_sign_up a{ text-decoration: none; /* убирает эффект ссылки */}
+
+/* cтили для футеровских элементов */
+.header__sign_buttons__button a{ text-decoration: none; /* убирает эффект ссылки */}
  
-.develop_span{
+/* стиль для надписи о разработке */
+.footer__constructions{
   font-size: 22px;
   color: #FFFFFF;
 }
 
-.my_info{
+/* стиль о надписи о мне */
+.footer__about-me{
   font-size: 22px;
   color: #FFFFFF;
 }
 
+/* СТИЛИ ДЛЯ MAIN ЭЛЕМЕНТОВ */
 
-
-.forgot {
-  align-self: flex-end;
-  margin-bottom: 10%;
+/* стиль для текста */
+.text{
+  font-size: 24px;
+  color: #2F80ED;
 }
 
-.login_button{
-  align-self: flex-end;
-}
 
-.right-marg{
+/* стиль для контейнера регистрации и логина */
+.main__input_login{
   display: flex;
+  justify-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  width: 50%;
+  background-color: antiquewhite; /* для вёрстки. потом убрать */
+  min-width: 450px;
 }
 
-.LogInText{
+/* стиль  для надписи Login */
+.main__input_login__login-span{
   color: #2F80ED;
   font-size: 30px;
   margin-bottom: 5%;
 }
 
-.text{
-  font-size: 24px;
-  color: #2F80ED;
-  
+/*убрать в названии login */
+.main__input_login__input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:5% ;
 }
 
-.loginbutton{
-  border-radius: 10px;
-  border-color: #78FFE7;
-  background-color: #2F80ED;
-  height: 70px;
-  width: 220px;
-  color: #ffffff;
-  font-size: 100%;
-  font-weight: bolder;
-}
-
-.text_input{
+.main__input_login__input__input-mail{
   border-radius: 15px;
   border-color: #2F80ED;
   background-color: #FFFFFF;
@@ -167,8 +158,47 @@ code {
   font-size: 40px;
 }
 
-.InpLog{
-  display: flex;
-  flex-direction: column;
-  margin-bottom:5% ;
+/* пока не отличается от верхнего, но сделай звездочки в тексте */
+.main__input_login__input__input-pass{
+  border-radius: 15px;
+  border-color: #2F80ED;
+  background-color: #FFFFFF;
+  opacity: 35%;
+  height: 70px;
+  font-size: 40px;
 }
+
+.main__input__forgot {
+  align-self: flex-end;
+  margin-bottom: 10%;
+  visibility: hidden; /* убрана до появления функционала восстановления пароля(навсегда) */
+}
+
+.login_button{
+  align-self: flex-end;
+}
+
+.main__input__bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main__input__bottom__new-here{
+  text-decoration: underline;
+}
+
+
+.main__input__bottom__auth{
+  border-radius: 10px;
+  background-color: #2F80ED;
+  height: 70px;
+  width: 220px;
+  color: #ffffff;
+  font-size: 100%;
+  font-weight: bolder;
+  align-self: flex-end;
+}
+
+

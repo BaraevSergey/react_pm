@@ -6,52 +6,52 @@ function LogPage(props) {
           
           <header class='header'>
             <picture>
-              <img class="lock" src="/img/lock.png" alt="lock" />
+              <img class="header__lock" src="/img/lock.png" alt="lock" />
             </picture>
-            <div class='sign_div' >
-              <button class="button_sign_in">Sign In</button>
-              <button class="button_sign_up" onClick={()=>props.setisLoginPage(false)}>Sign Up</button>
+            <div class='header__sign_buttons' >
+              <button class="header__sign_buttons__button" onClick={()=>props.setisLoginPage(true)}>Sign In</button>
+              <button class="header__sign_buttons__button" onClick={()=>props.setisLoginPage(false)}>Sign Up</button>
             </div>
           </header>
           
-          <main class='main'>
-            <div class='input_login'>
+          <main class='main text'>
+            <div class='main__input_login'>
               
-              <div class='LogInText'>
+              <div class='main__input_login__login-span'>
                   <b> Login </b>
               </div>
 
-              <div class='InpLog'>
-                <span class='text'>
+              <div class='main__input_login__input'>
+                <span>
                   E-mail
                 </span>
 
-                <input class='text_input'>
+                <input class='main__input_login__input__input-mail'>
               
                 </input>
               </div>
 
-              <div class='InpLog'>
-                <span class='text'>
+              <div class='main__input_login__input'>
+                <span>
                   Password
                 </span>
 
-                <input class='text_input'>
+                <input class='main__input_login__input__input-pass'>
                 
                 </input>
               </div>
 
-              <span class='forgot text'>
+              <span class='main__input__forgot'>
                 <b> Forgot Password? </b>
               </span>
               
 
-              <div class='right-marg text'>
-                <span>
+              <div class='main__input__bottom'>
+                <span class='main__input__bottom__new-here' onClick={()=>props.setisLoginPage(false)}>
                   New Here? <b> Register </b>
                 </span>
 
-                <button class='loginbutton'>
+                <button class='main__input__bottom__auth'>
                   Sign In
                 </button>
               </div>
@@ -59,8 +59,8 @@ function LogPage(props) {
           </main>
           
           <footer class='footer'>
-            <span class='develop_span'> This site is under construction</span>
-            <span class='my_info'> 
+            <span class='footer__constructions'> This site is under construction</span>
+            <span class='footer__about-me'> 
               Created by Baraev Sergey
               baraev.sergey@mail.ru 
             </span>
