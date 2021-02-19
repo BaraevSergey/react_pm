@@ -21,25 +21,27 @@ function LogPage(props) {
                   <b> Login </b>
               </div>
 
-              <div class='main__input_login__input'>
-                <span>
+                
+              <form class='main__input_login__input'>
+                
+                <label>
                   E-mail
-                </span>
+                </label>
 
-                <input class='main__input_login__input__input-mail'>
+                <input class='main__input_login__input__mail'>
               
                 </input>
-              </div>
+              </form>
 
-              <div class='main__input_login__input'>
-                <span>
+              <form class='main__input_login__input'>
+                <label>
                   Password
-                </span>
+                </label>
 
-                <input class='main__input_login__input__input-pass'>
+                <input class='main__input_login__input__pass'>
                 
                 </input>
-              </div>
+              </form>
 
               <span class='main__input__forgot'>
                 <b> Forgot Password? </b>

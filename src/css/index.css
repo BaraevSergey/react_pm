@@ -96,7 +96,7 @@ html{
   font-size: 100%;
   font-weight: bolder;
   margin-right: 10px;
-
+  cursor: pointer;
 }
 
 
@@ -131,7 +131,7 @@ html{
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
-  background-color: antiquewhite; /* для вёрстки. потом убрать */
+  /* background-color: antiquewhite;  */
   min-width: 450px;
 }
 
@@ -142,14 +142,15 @@ html{
   margin-bottom: 5%;
 }
 
-/*убрать в названии login */
+/* стиль для контейнера ввода данных*/
 .main__input_login__input{
   display: flex;
   flex-direction: column;
   margin-bottom:5% ;
 }
 
-.main__input_login__input__input-mail{
+/* стиль для ввода текста e-mail-a */
+.main__input_login__input__mail{
   border-radius: 15px;
   border-color: #2F80ED;
   background-color: #FFFFFF;
@@ -159,7 +160,8 @@ html{
 }
 
 /* пока не отличается от верхнего, но сделай звездочки в тексте */
-.main__input_login__input__input-pass{
+/* стиль для ввода текста пароля */
+.main__input_login__input__pass{
   border-radius: 15px;
   border-color: #2F80ED;
   background-color: #FFFFFF;
@@ -168,28 +170,29 @@ html{
   font-size: 40px;
 }
 
+/* стиль для восстановления пароля */
 .main__input__forgot {
   align-self: flex-end;
   margin-bottom: 10%;
   visibility: hidden; /* убрана до появления функционала восстановления пароля(навсегда) */
 }
 
-.login_button{
-  align-self: flex-end;
-}
-
+/* стиль для контейнера нижнего в основном контейнере */
+/* нужен чтобы разнести элементы внутри контейнера на всю ширину */
 .main__input__bottom{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
+/* стиль для регистрациии нового юзера */
 .main__input__bottom__new-here{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 
+/* стиль для кнопки авторизации (Sign In) */
 .main__input__bottom__auth{
   border-radius: 10px;
   background-color: #2F80ED;
@@ -199,6 +202,7 @@ html{
   font-size: 100%;
   font-weight: bolder;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 
