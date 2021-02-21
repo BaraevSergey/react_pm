@@ -1,9 +1,10 @@
 import React from 'react'
-function LogPage(props) {
+import HeadContent from './components/Header_content/Header_content_logpage'
 
+function LogPage(props) {
   return (
         <div class='app'>
-          
+          {/* <HeadContent/> */}
           <header class='header'>
             <picture>
               <img class="header__lock" src="/img/lock.png" alt="lock" />
