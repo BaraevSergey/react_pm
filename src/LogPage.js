@@ -1,6 +1,7 @@
 import React from 'react'
 import HeadContent from './components/Header_content/Header_content_logpage'
-
+import FootContent from './components/Footer_content/Footer_content'
+import Main from './components/Main_content/Main_content_logpage'
 function LogPage(props) {
   return (
         <div class='app'>
@@ -15,6 +16,8 @@ function LogPage(props) {
             </div>
           </header>
           
+
+          {/* <Main/> */}
           <main class='main text'>
             <div class='main__input_login'>
               
@@ -61,6 +64,7 @@ function LogPage(props) {
             </div>
           </main>
           
+          {/* <FootContent/> */}
           <footer class='footer'>
             <span class='footer__constructions'> This site is under construction</span>
             <span class='footer__about-me'> 
